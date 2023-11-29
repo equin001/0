@@ -1,39 +1,114 @@
 <!DOCTYPE html>
-  <html>
+<html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-    font-family: 'Figtree';font-size: 20px;
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+}
 
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 </style>
+  <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+  <style>
+  body {
+      font-family: 'Figtree';font-size: 20px;
+
+  </style>
 </head>
-  <body>
-      <h1>€ddie$</h1>
-  <h3 >#1 &euro;$ 1000000 | 0 Decimals</h3>
-  <b>Every living human can issue a one time 1000000 &euro;ddie$. <a href="https://create.edddies.com/"  target="_blank" style="background-color:orange">Creating &euro;ddie$</a>. <a href="https://double.edddies.com/"  target="_blank" style="background-color:orange">D̶o̶u̶b̶l̶e̶s̶p̶e̶n̶d̶i̶n̶g̶</a>.<b>
+<body>
 
-  <h3>#2 Price | 1 Minute</h3>
-  <b>The price of 1 &euro;ddie$ is govern by the formula <a href="https://www.wolframalpha.com/input?i=%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25"  target="_blank" style="background-color:orange">(21 EUR + 21 USD)* 1 + 21% VAT + 21%</a> inflation <a href="https://inflation.edddies.com/"  target="_blank" style="background-color:orange">per annum</a>, has zero decimals and is 1 minute of a &euro;ddie$ community member's time.<b>
+<h1>&euro;ddie$</h1>
 
-  <h3>#3 Mind | Mined</h3>
-  <b><a href="https://how.edddies.com/"  target="_blank" style="background-color:orange">How it works</a>, when you do or don't accept or pay for goods and services with &euro;ddie$.<b>
+<button class="accordion">&euro;$ 1000000 | 0 Decimals</button>
+<div class="panel">
+  <p> <b> Every living human can issue a one time 1000000 &euro;ddie$. <a href="https://create.edddies.com/"  target="_blank" style="background-color:orange">Creating &euro;ddie$</a>. <a href="https://double.edddies.com/"  target="_blank" style="background-color:orange">D̶o̶u̶b̶l̶e̶s̶p̶e̶n̶d̶i̶n̶g̶</a>.<b></p>
+</div>
 
-  <h3>#4 Opt | In</h3>
-  <b><a href="https://optin.edddies.com/"  target="_blank" style="background-color:orange">You can only opt-in</a> to someone's &euro;ddie$ if you meet them or whoever rightfully received their &euro;ddie$ in person or if it's a business you trust.<b>
+<button class="accordion">Price | 1 Minute</button>
+<div class="panel">
+  <p> <b>The price of 1 &euro;ddie$ is govern by the formula <a href="https://www.wolframalpha.com/input?i=%2821+EUR+%2B+21+USD%29*+1+%2B+21%25+%2B+21%25"  target="_blank" style="background-color:orange">(21 EUR + 21 USD)* 1 + 21% VAT + 21%</a> inflation <a href="https://inflation.edddies.com/"  target="_blank" style="background-color:orange">per annum</a>, has zero decimals and is 1 minute of a &euro;ddie$ community member's time.<b></p>
+</div>
 
-  <h3>#5 Opt | Out</h3>
-  <b>You can opt-out of everybody who break these 8 rules and revoke all of your &euro;ddie$ when necessary.<b>
+<button class="accordion">Mind | Mined</button>
+<div class="panel">
+  <p><b><a href="https://how.edddies.com/"  target="_blank" style="background-color:orange">How it works</a>, when you do or don't accept or pay for goods and services with &euro;ddie$.<b>
+</p>
+</div>
 
-  <h3>#6 tax | &euro;$</h3>
-  <b>&euro;ddie$ are not for paying taxes, whoever confiscate or coerce someone to give up their &euro;ddie$, the aggressors &euro;ddie$ are opt-out for life.<b>
+<button class="accordion">Opt | In</button>
+<div class="panel">
+  <p><b><a href="https://optin.edddies.com/"  target="_blank" style="background-color:orange">You can only opt-in</a> to someone's &euro;ddie$ if you meet them or whoever rightfully received their &euro;ddie$ in person or if it's a business you trust.<b></p>
+</div>
 
-  <h3>#7 Death</h3>
-  <b>Every living human can claim &euro;ddie$ with privatekeys, from family or friends who were &euro;ddie$ community members who have passed away.<b>
+<button class="accordion">Opt | Out</button>
+<div class="panel">
+  <p>  <b>You can opt-out of everybody who break these 8 rules and revoke all of your &euro;ddie$ when necessary.<b></p>
+</div>
 
-  <h3>#8 Community</h3>
-  <b>This "social contract" is self-regulated and enforced by the &euro;ddie$ community with proof of facts, costing 1 &euro;ddie$ per proof.<b>
+<button class="accordion">tax | &euro;$</button>
+<div class="panel">
+  <p><b>&euro;ddie$ are not for paying taxes, whoever confiscate or coerce someone to give up their &euro;ddie$, the aggressors &euro;ddie$ are opt-out for life.<b></p>
+</div>
 
 
-  </body>
-  </html>
+<button class="accordion">Death</button>
+<div class="panel">
+  <p> <b>Every living human can claim &euro;ddie$ with privatekeys, from family or friends who were &euro;ddie$ community members who have passed away.<b></p>
+</div>
+
+<button class="accordion">Community</button>
+<div class="panel">
+  <p><b>This "social contract" is self-regulated and enforced by the &euro;ddie$ community with proof of facts, costing 1 &euro;ddie$ per proof.<b></p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
